@@ -1,0 +1,54 @@
+What is HTTP and its evolution:
+
+    HTTP stands for hypertext transfer protocal used for transferring “hypertext” documents and 
+    it is the basis for almost all web applications.These were simple documents comprising 
+    mostly text and a few images, marked up with HTML to add formatting and links to 
+    other hypertext documents.
+
+    If we want to say specifically HTTP is the method  computers and servers use to request 
+    and send information.For instance, someone wants to search certain.com from their laptop
+    their web browser sends an HTTP request to the servers for the content that appears on 
+    the page.Then, the servers send HTTP responses with the text, images, and formatting
+    that the browser displays to the user.
+
+    By 1996, the HTTP/1.0 specification was adopted.This version was elegant and simple for the needs of the mid-90s web – make a connection, 
+    download a file, close the connection, and repeat for each file needed to display a web 
+    page.
+
+    But by end of 1990s things started to change.The web was rapidly evolving beyond 
+    imagination,people wanted to watch videos and edit documents and also send animated greeting 
+    cards from their browsers.The strategy of one connection, one file was quite slow for these 
+    new use-cases.
+
+    So in 1999 HTTP went through several stages of development and the first version of HTTP was 
+    called HTTP/1.1.We lived HTTP/1.1 specification,shoehorning more and more modern 
+    applications into the aging specification.This version is used on the web for almost 
+    16 years.
+
+    In 2015, a new version of HTTP called HTTP/2 was created.HTTP/2 solves several problems that
+    the creators of HTTP/1.1 did not anticipate.In particular, HTTP/2 is much faster and more 
+    efficient than HTTP/1.1.One of the ways in which HTTP/2 is faster is in how it prioritizes 
+    content during the loading process.
+
+Difference between HTTP/1.1 and HTTP/2?
+
+                HTTP/1.1                                  HTTP/2                         
+       
+    It works on the textual format.	         It works on the binary protocol.
+
+    It loads resources one after  the        It is able to use a single TCP connection                                      
+    other, so if one resources cannot        to send multiple streams of data at once                                                
+    loaded, it blocks all other              so that no one resource blocks any other resource,                                                
+    resources behind it.                     which allows multiplexing,so that the client knows 
+                                             which stream each binary message belongs to. 
+                                             Uses the connection of parallelism.
+
+    It uses requests resource Inlining      It uses PUSH frame by server that collects
+    for use getting multiple pages.         all multiple pages.                                   
+                                                                                               
+    It compresses data files by itself.	    It uses advanced data compression method to  
+                                            compress data files called HPACK.                                                                                        
+
+                                                                                           
+
+     

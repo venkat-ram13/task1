@@ -1,0 +1,27 @@
+Objects and its internal representation in JavaScript:
+
+    The concept of objects in JavaScript can be understood with real life and the properties 
+    of the object.An object is a collection of properties, and a property is an association 
+    between a name (or key) and a value.Javascript objects are represented with curly braces({})
+    and the properties are written as key value:pairs and they are separated by commas(,).
+
+    example:
+             const student = {
+                name:"Ram",
+                age:15,
+                class:10
+            };
+
+Accessing Object properties:
+    
+    we can access the object properties in two ways
+         1)By objectName.propertyname
+
+             from above example:
+             console.log(student.name);
+
+                  OR
+
+         2)By objectName["propertyname]
+            
+            console.log(student["name"]);
